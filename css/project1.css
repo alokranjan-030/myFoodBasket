@@ -1,0 +1,229 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+    
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navbar:Image and Logo*/
+#logo{
+    
+    margin: 3px 10px;
+
+}
+#logo img{
+    height: 85px;
+    width: 66px;
+    border-radius: 50%;
+    margin: 3px 5px;
+}
+/* Navbar:list  */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+    
+}
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+/* Home Div  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 515px;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#home::before{
+    content: "";
+    background: url("../background.jpg") no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+   
+}
+#home h1{
+    color: rgb(46, 11, 11);
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* Services Div  */
+
+#services{
+    display: flex;
+    
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid ;
+    background-color: rgb(235, 214, 209);
+    padding: 24px;
+    margin: 3px 6px;
+    border-radius: 29px;
+    
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: 4px auto;
+}
+#services .box p{
+    padding: 2px;
+}
+/* Clients Div  */
+#client-container{
+    height: 510px;
+    color: rgb(46, 11, 11);
+    position: relative;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+
+}
+#clients::before{
+   content: "";
+   background: url("../about us.jpg") no-repeat center center/cover;
+   position: absolute;
+   width: 100%;
+   height: 56vh;
+   z-index: -1;
+   opacity: 0.58;
+
+}.client-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.client-items img{
+    width: 190px;
+    height: 190px;
+    padding: 34px;
+    
+
+}
+/* Contact Div  */
+#contact{
+    position: relative;
+    height: 784px;
+}
+#contact::before{
+    content: "";
+    background: url("../contact us.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box input,textarea{
+    padding: 7px;
+    border-radius: 11px;
+    width: 100%;
+    font-size: 1.1rem;
+    
+}
+label{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+   
+}
+#contact-box form{
+    
+    width: 50%;
+}
+
+/* footer  */
+footer{
+    background-color: black;
+    color: wheat;
+    margin-bottom:15px;
+    font-size: 1.3rem;
+    padding: 7px;
+}
+
+/* utility classes  */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Berkshire Swash', cursive;
+    margin: 34px;
+    text-shadow: 3px 4px 6px chocolate;
+}
+.h-secondary{
+    color: rgb(134, 51, 36);
+    font-size: 2.2rem;
+    padding: 12px;
+     font-family: 'Berkshire Swash', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 19px;
+    border: 2px solid white;
+    background-color: rgb(179, 63, 43);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Berkshire Swash', cursive;
+}
+.center{
+    text-align: center;
+}
